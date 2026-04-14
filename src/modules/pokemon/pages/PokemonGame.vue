@@ -5,12 +5,17 @@
   </section>
 
   <section class="flex h-screen w-screen flex-col items-center justify-center">
-    <h1>¿ Quien es este Pokemon?</h1>
+    <h1 class="m-5">¿ Quien es este Pokemon?</h1>
 
-    
+    <PokemonPicture/>
+    <PokemonOptions/>
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PokemonOptions from '../components/PokemonOptions.vue';
+import PokemonPicture from '../components/PokemonPicture.vue';
+
+</script>
 
 <style scoped></style>
