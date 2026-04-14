@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import PokemonGame from '@/modules/pokemon/pages/PokemonGame.vue';
+</script>
+
 <template>
   <div>
-    <h1>Hello wordl</h1>
+    <PokemonGame />
   </div>
 </template>
