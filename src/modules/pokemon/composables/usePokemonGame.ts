@@ -2,7 +2,7 @@ import { onMounted, ref } from 'vue';
 import { GameStatus } from '../interfaces';
 import pokemonApi from '../api/pokemonApi';
 
-export const usePokemon = () => {
+export const usePokemonGame = () => {
   const gameStatus = ref<GameStatus>(GameStatus.Playing);
 
   const getPokemons = async() => {
@@ -13,7 +13,7 @@ export const usePokemon = () => {
 
 
   onMounted(()=>{
-    getPokemons
+    getPokemons();
   })
   return {
     gameStatus,
